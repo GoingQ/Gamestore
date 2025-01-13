@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klanten met woord in naam</title>
+    <script src="js/klant.js" type="module" defer></script>
+    <link rel="icon" href="images/games.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/gamestore.css">
+</head>
+<body>
+<h1>Klant</h1>
+<label>Woord:
+    <span id="woordFout" class="fout" hidden>Verplicht</span>
+    <input id="woord" required autofocus>
+</label>
+<button id="zoek">Zoeken</button>
+<table id="klantenTable" hidden>
+    <thead>
+    <tr>
+        <th>naam</th>
+        <th>straat - huisnummer</th>
+        <th>postcode</th>
+        <th>gemeente</th>
+    </tr>
+    </thead>
+    <tbody id="klantenBody">
+    </tbody>
+</table>
+<nav>
+    <a href="index.html">Startpagina</a>
+    <a href="mandje.html">Mandje</a>
+</nav>
+<div id="storing" class="fout" hidden>Storing, contacteer helpdesk.</div>
+</body>
+</html>
